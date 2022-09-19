@@ -1,0 +1,9 @@
+services:
+  basicapp:
+    build:
+      context: .
+      dockerfile: ./apps/basicapp/Dockerfile
+      target: development
+    env_file:
+      - ./apps/basicapp/.env
+    restart: on-failure

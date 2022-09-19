@@ -1,0 +1,6 @@
+services:
+  basicapp:
+    command: yarn dev --filter=basicapp
+    volumes:
+      - .:/app
+      - /app/node_modules

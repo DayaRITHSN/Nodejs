@@ -1,0 +1,8 @@
+services:
+  basicapp:
+    extends:
+      file: docker-compose.yml
+      service: basicapp
+    build:
+      target: production
+    restart: unless-stopped
